@@ -1,0 +1,73 @@
+@media (max-width: 800px) {
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-image {
+    min-height: 300px;
+  }
+
+  .form-box {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 20px 15px;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    gap: 7px;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+  }
+
+  .hero {
+    height: 650px;
+  }
+
+  .hero-text h1 {
+    font-size: 43px;
+  }
+
+  .hero-text span {
+    font-size: 15px;
+  }
+
+  .search-section h2,
+  .deals h2,
+  .destinations h2 {
+    font-size: 35px;
+  }
+}

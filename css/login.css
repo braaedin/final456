@@ -1,0 +1,355 @@
+/* =================================
+   TRAVEL GUIDE - LOGIN PAGE
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(135deg, rgba(8, 47, 73, 0.82), rgba(14, 165, 233, 0.55)),
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1920&q=85");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  padding: 30px;
+}
+
+/* =================================
+   BACKGROUND DECORATION
+================================= */
+
+body::before {
+  content: "";
+  position: fixed;
+
+  width: 300px;
+  height: 300px;
+
+  top: -120px;
+  left: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  filter: blur(5px);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+
+  width: 250px;
+  height: 250px;
+
+  right: -100px;
+  bottom: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  filter: blur(5px);
+}
+
+/* =================================
+   LOGIN CARD
+================================= */
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+
+  padding: 42px;
+
+  position: relative;
+  z-index: 2;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 30px 70px rgba(0, 0, 0, 0.25),
+    0 8px 20px rgba(0, 0, 0, 0.1);
+
+  backdrop-filter: blur(14px);
+
+  animation: cardAppear 0.7s ease;
+}
+
+/* =================================
+   CARD ANIMATION
+================================= */
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =================================
+   TRAVEL GUIDE BRAND
+================================= */
+
+.travel-guide-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 13px;
+
+  color: #0284c7;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.travel-guide-header::before {
+  content: "✈";
+
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #e0f2fe;
+
+  font-size: 15px;
+
+  box-shadow: 0 5px 12px rgba(14, 165, 233, 0.12);
+}
+
+/* =================================
+   TITLE
+================================= */
+
+h2 {
+  margin: 0 0 8px;
+
+  color: #0f172a;
+
+  font-size: 32px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+/* =================================
+   SUBTITLE
+================================= */
+
+.subtitle {
+  margin-bottom: 30px;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =================================
+   FORM
+================================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+/* =================================
+   INPUT GROUP
+================================= */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* =================================
+   LABELS
+================================= */
+
+label {
+  color: #334155;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* =================================
+   INPUTS
+================================= */
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #d8e1ea;
+
+  border-radius: 11px;
+
+  background: #f8fafc;
+
+  color: #0f172a;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.25s ease;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #a8b3c0;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover {
+  border-color: #b9c7d6;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background: #ffffff;
+
+  border-color: #0ea5e9;
+
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1);
+
+  transform: translateY(-1px);
+}
+
+/* =================================
+   LOGIN BUTTON
+================================= */
+
+button[type="submit"],
+input[type="submit"] {
+  width: 100%;
+
+  margin-top: 7px;
+
+  padding: 14px 18px;
+
+  border: none;
+  border-radius: 11px;
+
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.25);
+
+  transition: 0.3s ease;
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 13px 28px rgba(14, 165, 233, 0.32);
+
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+}
+
+button[type="submit"]:active,
+input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* =================================
+   BACK LINK
+================================= */
+
+.back-link {
+  display: block;
+
+  width: fit-content;
+
+  margin: 25px auto 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.back-link:hover {
+  color: #0ea5e9;
+
+  transform: translateX(-3px);
+}
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 500px) {
+  body {
+    padding: 20px;
+  }
+
+  .login-container {
+    padding: 32px 25px;
+
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    padding: 13px 14px;
+  }
+}

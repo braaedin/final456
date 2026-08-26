@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Guide</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/destinations.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body id="top">
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">✈️ Travel Guide</h2>
+
+        <div class="nav-links">
+          <a href="#flights">Flights</a>
+          <a href="#hotels">Hotels</a>
+          <a href="#vacations">Vacations</a>
+          <a href="#deals">Deals</a>
+          <a href="login.html">Login</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========================
+         LANDING / HERO
+    ========================= -->
+
+    <section class="hero">
+      <div class="hero-text">
+        <p>EXPLORE THE WORLD</p>
+
+        <h1>Your next adventure starts here.</h1>
+
+        <span> Find affordable flights, hotels and vacation packages. </span>
+
+        <br />
+
+        <button onclick="scrollToSearch()">Start Exploring</button>
+      </div>
+    </section>
+
+    <!-- =========================
+         FLIGHTS
+    ========================= -->
+
+    <section class="search-section" id="flights">
+      <h2>Find Your Flight ✈️</h2>
+
+      <p>Search for your perfect flight.</p>
+
+      <div class="plane"></div>
+
+      <div class="search-box">
+        <div class="tabs">
+          <button onclick="showSearch('flight')">✈️ Flights</button>
+          <button onclick="showSearch('hotel')">🏨 Hotels</button>
+          <button onclick="showSearch('vacation')">🌴 Vacations</button>
+        </div>
+
+        <!-- FLIGHT SEARCH -->
+
+        <div id="flight-search" class="search-form">
+          <input id="from" type="text" placeholder="From" />
+
+          <input id="to" type="text" placeholder="To" />
+
+          <input id="departure" type="date" />
+
+          <select id="passengers">
+            <option>1 Passenger</option>
+            <option>2 Passengers</option>
+            <option>3 Passengers</option>
+            <option>4 Passengers</option>
+          </select>
+
+          <button onclick="searchFlights()">Search</button>
+        </div>
+
+        <!-- HOTEL SEARCH -->
+
+        <div id="hotel-search" class="search-form hidden">
+          <input id="hotel-destination" type="text" placeholder="Destination" />
+
+          <input id="checkin" type="date" />
+
+          <input id="checkout" type="date" />
+
+          <select>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+          </select>
+
+          <button onclick="searchHotels()">Search</button>
+        </div>
+
+        <!-- VACATION SEARCH -->
+
+        <div id="vacation-search" class="search-form hidden">
+          <input
+            id="vacation-destination"
+            type="text"
+            placeholder="Destination"
+          />
+
+          <select id="budget">
+            <option>Under 50,000 DA</option>
+            <option>Under 100,000 DA</option>
+            <option>Under 150,000 DA</option>
+            <option>Any Budget</option>
+          </select>
+
+          <select>
+            <option>1 Traveler</option>
+            <option>2 Travelers</option>
+            <option>3 Travelers</option>
+            <option>4 Travelers</option>
+          </select>
+
+          <button onclick="searchVacations()">Search</button>
+        </div>
+
+        <p id="search-result"></p>
+      </div>
+
+      <!-- BACK TO LANDING -->
+
+      <a href="#top" class="back-link"> ↑ Back to Landing Page </a>
+    </section>
+
+    <!-- =========================
+         HOTELS
+    ========================= -->
+
+    <section class="features" id="hotels">
+      <h2>Why Choose Our Hotels? 🏨</h2>
+
+      <div class="feature-container">
+        <div class="feature">
+          <div class="feature-icon">💰</div>
+
+          <h3>Affordable Prices</h3>
+
+          <p>Find great hotel deals for your next trip.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">⭐</div>
+
+          <h3>Quality Hotels</h3>
+
+          <p>Discover comfortable places to stay around the world.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+
+          <h3>Easy Booking</h3>
+
+          <p>Make planning your trip simple and easy.</p>
+        </div>
+      </div>
+
+      <!-- HOTEL PHOTOS -->
+
+      <div class="hotel-pictures">
+        <img
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
+          alt="Luxury hotel"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+          alt="Modern hotel"
+        />
+      </div>
+
+      <!-- BACK TO LANDING -->
+
+      <a href="#top" class="back-link"> ↑ Back to Landing Page </a>
+    </section>
+
+    <!-- =========================
+         VACATIONS
+    ========================= -->
+
+    <section class="destinations" id="vacations">
+      <h2>Dream Destinations 🌎</h2>
+
+      <p class="section-subtitle">Where will your next adventure take you?</p>
+
+      <div class="destination-grid">
+        <div class="destination destination-rome">
+          <h3>🇮🇹 Rome</h3>
+        </div>
+
+        <div class="destination destination-maldives">
+          <h3>🇲🇻 Maldives</h3>
+        </div>
+
+        <div class="destination destination-london">
+          <h3>🇬🇧 London</h3>
+        </div>
+
+        <div class="destination destination-tokyo">
+          <h3>🇯🇵 Tokyo</h3>
+        </div>
+      </div>
+
+      <!-- BACK TO LANDING -->
+
+      <a href="#top" class="back-link"> ↑ Back to main page </a>
+    </section>
+
+    <!-- =========================
+         DEALS
+    ========================= -->
+
+    <section class="deals" id="deals">
+      <h2>Popular Deals</h2>
+
+      <p class="section-subtitle">
+        Discover some of our most popular destinations.
+      </p>
+
+      <div class="cards">
+        <!-- PARIS -->
+
+        <div class="card">
+          <div class="card-image paris"></div>
+
+          <div class="card-content">
+            <span>🇫🇷 FRANCE</span>
+
+            <h3>Paris</h3>
+
+            <p>Flight + Hotel • 6 Days</p>
+
+            <h3>89,900 DA</h3>
+
+            <button onclick="book('Paris', 89900)">View Deal</button>
+          </div>
+        </div>
+
+        <!-- ISTANBUL -->
+
+        <div class="card">
+          <div class="card-image istanbul"></div>
+
+          <div class="card-content">
+            <span>🇹🇷 TURKEY</span>
+
+            <h3>Istanbul</h3>
+
+            <p>Flight + Hotel • 7 Days</p>
+
+            <h3>59,900 DA</h3>
+
+            <button onclick="book('Istanbul', 59900)">View Deal</button>
+          </div>
+        </div>
+
+        <!-- DUBAI -->
+
+        <div class="card">
+          <div class="card-image dubai"></div>
+
+          <div class="card-content">
+            <span>🇦🇪 UAE</span>
+
+            <h3>Dubai</h3>
+
+            <p>Flight + Hotel • 7 Days</p>
+
+            <h3>99,900 DA</h3>
+
+            <button onclick="book('Dubai', 99900)">View Deal</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACK TO LANDING -->
+
+      <a href="#top" class="back-link"> ↑ Back to Landing Page </a>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+      <h2>✈️ Travel Guide</h2>
+
+      <p>Your world. Your adventure.</p>
+
+      <div class="footer-links">
+        <a href="#top">Home</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p>© 2026 Travel Guide</p>
+    </footer>
+
+    <!-- =========================
+         BOOKING POPUP
+    ========================= -->
+
+    <div id="booking-modal" class="modal hidden">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal()">×</button>
+
+        <h2>Booking</h2>
+
+        <p id="booking-text"></p>
+
+        <h3 id="booking-price"></h3>
+
+        <button onclick="confirmBooking()">Confirm Booking</button>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

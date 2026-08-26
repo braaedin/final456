@@ -1,0 +1,228 @@
+.search-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.search-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+
+.search-box {
+  max-width: 1100px;
+  margin: auto;
+
+  padding: 10px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow: 0 15px 45px rgba(20, 33, 61, 0.12);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs button {
+  flex: 1;
+
+  padding: 15px;
+
+  border: none;
+  background: white;
+
+  font-weight: bold;
+}
+
+.tabs button:hover {
+  background: #fff0eb;
+  color: #e95434;
+}
+
+.search-form {
+  padding: 20px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr)
+    auto;
+
+  gap: 10px;
+}
+
+.search-form input,
+.search-form select {
+  padding: 13px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+}
+
+.search-form button {
+  border: none;
+
+  background: #14213d;
+  color: white;
+
+  padding: 13px 18px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+.search-form button:hover {
+  background: #ff6b4a;
+}
+
+#search-result {
+  min-height: 25px;
+  font-weight: bold;
+}
+
+/* General page styling */
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #eaf6ff, #ffffff);
+  color: #18324a;
+}
+
+/* Main heading */
+h1 {
+  font-size: 42px;
+  text-align: center;
+  color: #12395b;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Subheadings */
+h2 {
+  color: #1d5d87;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* Paragraphs */
+p {
+  color: #607080;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Hotel/features section */
+section {
+  background: white;
+  padding: 25px;
+  margin: 25px auto;
+  max-width: 1100px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Images — styling only, NOT changing the pictures */
+img {
+  width: 48%;
+  border-radius: 15px;
+  margin: 1%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Feature items */
+.feature {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f6f5ff;
+  border-radius: 15px;
+  border: 1px solid #dcecf7;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  background: #ffb84d;
+  color: #18324a;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff9f1c;
+  transform: scale(1.05);
+}
+
+/* Links */
+a {
+  color: #1671a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  body {
+    padding: 20px;
+  }
+
+  .feature {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  img {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+.hotel-pictures {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.hotel-pictures img {
+  width: 700px !important;
+  height: 500px !important;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.plane {
+  width: 1000px;
+  height: 500px;
+  background: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05")
+    center/cover;
+  border-radius: 15px;
+}

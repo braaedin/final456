@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TravelGuide - Contact Us</title>
+
+    <!-- Contact Page CSS -->
+    <link rel="stylesheet" href="/css/contact.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ======================================
+         NAVIGATION BAR
+    ======================================= -->
+
+    <nav class="navbar">
+      <div class="nav-logo">Travel<span>Guide</span></div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"> Home </a>
+        </li>
+
+        <li>
+          <a href="hotels.html"> Hotels </a>
+        </li>
+
+        <li>
+          <a href="contact.html" class="active"> Contact </a>
+        </li>
+
+        <li>
+          <a href="login.html" class="login-btn"> Login </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ======================================
+         MAIN CONTACT SECTION
+    ======================================= -->
+
+    <main class="contact-container">
+      <!-- ==================================
+             TRAVEL IMAGE
+        =================================== -->
+
+      <div class="contact-image">
+        <div class="image-overlay">
+          <span> TRAVEL WITH US </span>
+
+          <h1>
+            Your journey
+            <br />
+            starts here.
+          </h1>
+
+          <p>
+            Discover amazing places, create unforgettable memories, and let
+            TravelGuide help you plan your next adventure.
+          </p>
+        </div>
+      </div>
+
+      <!-- ==================================
+             CONTACT FORM
+        =================================== -->
+
+      <section class="contact-form-section">
+        <h2>Send us a message</h2>
+
+        <p class="form-subtitle">
+          Have a question? Tell us what you need and our team will be happy to
+          help.
+        </p>
+
+        <form class="contact-form">
+          <!-- FULL NAME -->
+
+          <div class="form-group">
+            <label for="name"> Full Name </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <!-- EMAIL -->
+
+          <div class="form-group">
+            <label for="email"> Email Address </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <!-- DESTINATION -->
+
+          <div class="form-group">
+            <label for="destination"> Destination </label>
+
+            <input
+              type="text"
+              id="destination"
+              name="destination"
+              placeholder="Where do you want to go?"
+            />
+          </div>
+
+          <!-- MESSAGE -->
+
+          <div class="form-group">
+            <label for="message"> Your Message </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us about your trip..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- SEND BUTTON -->
+
+          <button type="submit" class="submit-btn">
+            <span> Send Message </span>
+
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </section>
+
+      <!-- ==================================
+             CONTACT INFORMATION
+        =================================== -->
+
+      <section class="contact-info">
+        <p class="subtitle">CONTACT TRAVELGUIDE</p>
+
+        <h1>We're here to help.</h1>
+
+        <p class="description">
+          Whether you need help choosing a destination, finding a hotel, or
+          planning your next trip, our team is ready to help.
+        </p>
+
+        <div class="info-blocks">
+          <!-- EMAIL -->
+
+          <div class="info-item">
+            <div class="icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div>
+              <h3>Email</h3>
+
+              <p>
+                <a href="mailto:hello@travelguide.com">
+                  hello@travelguide.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- PHONE -->
+
+          <div class="info-item">
+            <div class="icon-box">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div>
+              <h3>Phone</h3>
+
+              <p>
+                <a href="tel:+213555123456"> +213 555 123 456 </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- LOCATION -->
+
+          <div class="info-item">
+            <div class="icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div>
+              <h3>Location</h3>
+
+              <p>Algiers, Algeria</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

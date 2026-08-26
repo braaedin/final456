@@ -1,0 +1,73 @@
+.destinations {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+
+.destination-grid {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.destination {
+  height: 250px;
+
+  border-radius: 15px;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+
+  align-items: end;
+
+  padding: 25px;
+
+  color: white;
+
+  text-align: left;
+
+  transition: 0.3s;
+}
+
+.destination:hover {
+  transform: scale(1.02);
+}
+
+.destination h3 {
+  font-size: 25px;
+}
+
+.destination-rome {
+  background-image:
+    linear-gradient(transparent, rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1529260830199-42c24126f198?auto=format&fit=crop&w=1000&q=80");
+}
+
+.destination-maldives {
+  background-image:
+    linear-gradient(transparent, rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=80");
+}
+
+.destination-london {
+  background-image:
+    linear-gradient(transparent, rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1000&q=80");
+}
+
+.destination-tokyo {
+  background-image:
+    linear-gradient(transparent, rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1000&q=80");
+}

@@ -1,0 +1,100 @@
+.deals {
+  background: white;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.deals h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+
+.cards {
+  max-width: 1150px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.card {
+  text-align: left;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  border: 1px solid #e4e4e4;
+
+  background: white;
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+  height: 230px;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.paris {
+  background-image: url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80");
+}
+
+.istanbul {
+  background-image: url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1000&q=80");
+}
+
+.dubai {
+  background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80");
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content span {
+  font-size: 11px;
+
+  color: #0d8b83;
+
+  font-weight: bold;
+}
+
+.card-content h3 {
+  margin: 5px 0;
+  font-size: 22px;
+}
+
+.card-content p {
+  color: #697386;
+}
+
+.card-content button {
+  margin-top: 15px;
+
+  border: none;
+
+  background: #14213d;
+  color: white;
+
+  padding: 13px 18px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+.card-content button:hover {
+  background: #ff6b4a;
+}

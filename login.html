@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login - Travel Guide</title>
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">✈️ Travel Guide</h2>
+
+        <div class="nav-links">
+          <a href="index.html#flights">Flights</a>
+
+          <a href="index.html#hotels">Hotels</a>
+
+          <a href="index.html#vacations">Vacations</a>
+
+          <a href="index.html#deals">Deals</a>
+
+          <a href="login.html">Login</a>
+
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="form-page">
+      <div class="form-container">
+        <div class="form-image login-image"></div>
+
+        <div class="form-box">
+          <p class="small-title">TRAVEL GUIDE</p>
+
+          <h1>
+            Dear Traveler and Honored Guest this is the login page sign up to
+            enjoy vavactions for reasonable Prices ✈️
+          </h1>
+
+          <p>Login to continue planning your next adventure.</p>
+
+          <form onsubmit="login(event)">
+            <label>Email</label>
+
+            <input
+              id="login-email"
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label>Password</label>
+
+            <input
+              id="login-password"
+              type="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <button type="submit">Login</button>
+          </form>
+
+          <p id="login-result"></p>
+
+          <a class="back-link" href="index.html"> ← Back to Travel Guide </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+.form-page {
+  min-height: 100vh;
+
+  padding: 120px 20px 60px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  max-width: 1000px;
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 20px 60px rgba(20, 33, 61, 0.15);
+}
+
+.form-image {
+  min-height: 600px;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.login-image {
+  background-image: url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=80");
+}
+
+.contact-image {
+  background-image: url("https://images.unsplash.com/photo-1539635278303-d4002c07eae3?auto=format&fit=crop&w=1000&q=80");
+}
+
+.form-box {
+  padding: 55px;
+}
+
+.form-box h1 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 45px;
+
+  margin-bottom: 10px;
+}
+
+.form-box > p {
+  color: #697386;
+  margin-bottom: 25px;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+  font-weight: bold;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+  padding: 13px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+}
+
+.form-box textarea {
+  resize: vertical;
+}
+
+.form-box button {
+  margin-top: 20px;
+
+  border: none;
+
+  background: #14213d;
+  color: white;
+
+  padding: 13px;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+.form-box button:hover {
+  background: #ff6b4a;
+}
+
+.small-title {
+  color: #ff6b4a !important;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+}
+
+.back-link {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  color: #697386;
+
+  font-weight: bold;
+}
+
+.back-link:hover {
+  color: #ff6b4a;
+}
+
+#login-result,
+#contact-result {
+  margin-top: 15px;
+  font-weight: bold;
+}
